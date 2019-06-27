@@ -6,6 +6,6 @@
 *.pot
 *.pyc
 __pycache__/
-wordcount/settings.py
+/settings.py
 db.sqlite3
-media
+/media
