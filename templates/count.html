@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<a href="{% url 'homepage' %}">Back to homepage</a>
+		<a href="{% url 'aboutpage' %}">About Us</a>
+		<h1>Count Page</h1>
+		<h2>You Typed:</h2>
+		{{ complete_text }}
+		<h2>Number of Words : </h2> {{ no_of_words }}
+		<h2>Count of each word :</h2>
+
+		<!-- for loop in html-python's loop in html-->
+		{% for word,value in word_dict %}
+		{{ word }} = {{ value }}
+		<br>
+		{% endfor %}
+</body>
+</html>
